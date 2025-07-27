@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing Maven dependencies..."
+      - mvn clean install -DskipTests
+
+artifacts:
+  files:
+    - target/*.jar
+  base-directory: target
