@@ -4,9 +4,10 @@ phases:
   install:
     commands:
       - echo "Installing Maven dependencies..."
+      - cd demo-wawawa
       - mvn clean install -DskipTests
 
 artifacts:
   files:
     - target/*.jar
-  base-directory: target
+  base-directory: demo-wawawa/target
